@@ -9,6 +9,12 @@ let head = `<!DOCTYPE html><html><head>
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: antialiased;
   }
+  img {
+    max-width: 450px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
   ul {
     list-style:none;
     padding-left:0;
