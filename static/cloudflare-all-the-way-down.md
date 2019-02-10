@@ -11,6 +11,8 @@ Today, [ejj.io is written and delivered](https://github.com/ejcx/ejj) completely
 The source code for this site is [available on github](https://github.com/ejcx/ejj). 
 
 The site's routing is handled using [Worker Router](https://github.com/ejcx/workerrouter). It's a simple express-like (this is very generous) router I whipped up to do routing in workers.
+
+Here's an example:
 ```
 var workerrouter = new require('workerrouter')
 var app = new workerrouter();
@@ -24,7 +26,7 @@ The deployment of my site is handled with [cf](https://github.com/ejcx/cf). It's
 <img src="https://camo.githubusercontent.com/b50f1d6159c3105ccf13a9426a6e38bc17d8f267/68747470733a2f2f692e696d6775722e636f6d2f4a7335727743432e676966" title="cf demo"/>
 
 # Storage
-I wrote this blog post as markdown, which is read from Workers KV, converted to HTML, and served. You might notice I have some non-markdown blog posts as well. These are legacy posts that I hand wrote in HTML, and didn't want to convert to HTML.
+I wrote this blog post as markdown, which is read from Workers KV, converted to HTML, and served. You might notice I have some non-markdown blog posts as well. These are legacy posts that I hand wrote in HTML, and didn't want to spend the time converting to markdown.
 
 I use `cf` to write static files to the storage namespace that I set up for my blog.
 
@@ -43,10 +45,10 @@ It's not a website without a secure connection. Instead of worrying about TLS my
 
 <img src="https://i.imgur.com/lyOJPoF.png"/>
 
-I use dedicated certificates because I am an employee at Cloudflare, but Universal SSL for Free would work just as well.
+I use dedicated certificates because I am an employee at Cloudflare and wanted to try them out, but Universal SSL for free would work just as well.
 
 # DNS
-For the most part, all domains on Cloudflare must use Cloudflare's DNS. ejj.io is not an exception, and my nameservers point at carter.ns.cloudflare.com and donna.ns.cloudflare.com
+For the most part, all domains on Cloudflare must use Cloudflare's DNS. ejj.io is not an exception, and my nameservers point at `carter.ns.cloudflare.com` and `donna.ns.cloudflare.com`.
 
 <img src="https://i.imgur.com/LIVsYHm.png"/>
 
