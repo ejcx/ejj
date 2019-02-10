@@ -35,7 +35,6 @@ function serve_raw(f) {
 app.get('\/(blog\/)?misconfigured-cors', serve_raw('static/misconfigured-cors.html'));
 app.get('\/(blog\/)?crash-safari-com', serve_raw('static/crashing-safari.html'));
 app.get('\/(blog\/)?keybase-io-vulnerability', serve_raw('static/keybase-io-vulnerability.html'));
-app.get('/staging', async (request) => { return new Response("It's staging") })
 
 app.get('/blog', serve('static/blog.md'));
 app.get('/contact$', serve('static/contact.md'));
