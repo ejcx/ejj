@@ -1,2 +1,2 @@
-# ejj
-My personal site, completely run on Cloudflare
+# ejj.io
+My personal site. Read [this](https://ejj.io/blog/cloudflare-all-the-way-down).
