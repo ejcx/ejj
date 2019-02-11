@@ -14,6 +14,7 @@ upload-statics:
 	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/keybase-io-vulnerability.html --value @static/keybase-io-vulnerability.html
 	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/blog.md --value @static/blog.md
 	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/cloudflare-all-the-way-down.md --value @static/cloudflare-all-the-way-down.md
+	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/newsletter.md --value @static/newsletter.md
 
 build:
 	./node_modules/webpack-cli/bin/cli.js app.js

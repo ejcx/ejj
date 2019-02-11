@@ -41,6 +41,7 @@ app.get('\/(blog\/)?keybase-io-vulnerability', serve_raw('static/keybase-io-vuln
 
 app.get('^\/blog(\/)?', serve('static/blog.md'));
 app.get('/contact$', serve('static/contact.md'));
+app.get('/newsletter$', serve('static/newsletter.md'));
 app.get('^\/(index.html)?$', serve('static/index.md'));
 
 addEventListener('fetch', event => {
