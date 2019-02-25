@@ -31,6 +31,7 @@ function serve_raw(f) {
 
 // New blog posts. Stricter Routing.
 app.get('/blog\/cloudflare-all-the-way-down', serve('static/cloudflare-all-the-way-down.md'));
+app.get('/blog\/passgo-update', serve('static/passgo.md'));
 
 // Note that blog is optional. These are hyperlinked to a long time ago, and
 // blog was historically not prefixed on the path. Going forward don't forget

@@ -1,4 +1,5 @@
 # Blog
+- [Passgo Update](/blog/passgo-update)
 - [It's Cloudflare All The Way Down](/blog/cloudflare-all-the-way-down)
 - [Misconfigured CORS](/misconfigured-cors)
 - [Crashing Safari](/crash-safari-com)
