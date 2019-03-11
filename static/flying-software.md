@@ -7,7 +7,7 @@ In order to maintain a high level of assurance the FAA follows a strict process 
 
 A major part of these approval guidelines is a document called the DO-178C. It's the framework that the FAA uses to evaluate if a piece of software has gone through the rigor required to be considered airworthy.
 
-The DO-178C is maintained by <a href="https://www.rtca.org/">RTCA</a> and costs a couple hundred bucks. I bought a copy of it and it is exactly what I expected. There are some neat diagrams, but it's mostly a big list of software development lifecycle requirements.
+The DO-178C is maintained by <a href="https://www.rtca.org/">RTCA</a> and costs a couple hundred bucks. I bought a copy of it and it is exactly what I expected. There are some neat diagrams, but it's mostly a big list of software development life cycle requirements.
 
 <img src="https://i.imgur.com/Ky8liaZ.png"/>
 
@@ -17,8 +17,10 @@ I wanted to change this by FOIA requesting more information about the DO-178C. I
 
 <img src="https://i.imgur.com/ZOwDJqV.png"/>
 
-As the entire aviation industry began including more and more software in systems like the glass cock-pit of the Boeing 787, or the Manueving Characteristics Augmentation System of the Boeing 737 Max that is in the news this week, flight has remained very safe with only a few software related incidents.
+As the entire aviation industry began including more and more software in systems like the glass cockpit of the Boeing 787, or the Manueving Characteristics Augmentation System of the Boeing 737 Max that is in the news this week, flight has remained very safe with only a few software related incidents.
 
 The DO-178C is major positive despite that little is known about the process outside of the aviation industry. Other industries like the [automotive industry](https://www.telegraph.co.uk/technology/2016/09/21/tesla-fixes-software-bug-that-allowed-chinese-hackers-to-control/) or the [autonomous vehicle industry](https://www.nytimes.com/2018/03/19/technology/uber-driverless-fatality.html) (once it is more developed) would benefit from a similar standard.
+
+I think we will eventually have similar requirements in cars, but it will likely be more complex to implement due to the number of automotive manufacturers and the number of countries they are in.
 
 March 10, 2019
