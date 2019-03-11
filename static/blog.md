@@ -1,5 +1,5 @@
 # Blog
-- [Flying Software](/blog/passgo-update) - March 10, 2019
+- [Flying Software](/blog/flying-software) - March 10, 2019
 - [Passgo Update](/blog/passgo-update) - Feb 24, 2019
 - [It's Cloudflare All The Way Down](/blog/cloudflare-all-the-way-down) - Feb 10, 2019
 - [Misconfigured CORS](/misconfigured-cors) - Feb 2016

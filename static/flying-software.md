@@ -19,6 +19,6 @@ I wanted to change this by FOIA requesting more information about the DO-178C. I
 
 As the entire aviation industry began including more and more software in systems like the glass cock-pit of the Boeing 787, or the Manueving Characteristics Augmentation System of the Boeing 737 Max that is in the news this week, flight has remained very safe with only a few software related incidents.
 
-The DO-178C is major positive despite that little is known about the process outside of the aviation industry. Other industries like the [automotive industry](https://www.nytimes.com/2018/03/31/business/tesla-crash-autopilot-musk.html) or the [autonomous vehicle industry](https://www.nytimes.com/2018/03/19/technology/uber-driverless-fatality.html) (once it is more developed) would benefit from a similar standard.
+The DO-178C is major positive despite that little is known about the process outside of the aviation industry. Other industries like the [automotive industry](https://www.telegraph.co.uk/technology/2016/09/21/tesla-fixes-software-bug-that-allowed-chinese-hackers-to-control/) or the [autonomous vehicle industry](https://www.nytimes.com/2018/03/19/technology/uber-driverless-fatality.html) (once it is more developed) would benefit from a similar standard.
 
 March 10, 2019
