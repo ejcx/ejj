@@ -22,6 +22,11 @@ let head = `<!DOCTYPE html><html><head>
   li.spacer {
     padding-top:15px;
   }
+  pre {
+    background-color:#f1f1f1;
+    padding:5px;
+    border-radius:5px;
+  }
 </style>
 </head><body>
 <div class="categories"><a href="/">About</a> | <a href="/blog">Blog</a> | <a href="/contact">Contact</a> | <a href="/newsletter">Newsletter</a> </div>
