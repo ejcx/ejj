@@ -38,8 +38,7 @@ let foot = `
 
 async function get(key) {
   try {
-    var v = await kv.fetch(key, {headers: {"cache-control": "no-cache"}})
-    return await v.text()
+    return await kv.get(key)
   } catch (e) {
     return null
   }
