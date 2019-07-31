@@ -7,6 +7,7 @@ yarn:
 	yarn
 
 upload-statics:
+	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/capital-one.md --value @static/capital-one.md
 	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/index.md --value @static/index.md
 	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/passgo.md --value @static/passgo.md
 	cf worker write-kv --organization-id $(ORGID) --namespace-id $(NAMESPACEID) --key static/contact.md --value @static/contact.md
