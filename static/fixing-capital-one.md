@@ -99,4 +99,4 @@ GCP and Azure have different protections that require attackers to have control 
 
 AWS has improved their offering, but it might not be as comprehensive as their blog post is advertising, and it comes with quite a lot of complexity.
 
-At this point, it is fair to say that AWS' IMDSv2 offering is equal in security to the offering provided by GCP and Azure, but I hope to se _IMDSv3_ in the future to improve AWS security further.
+At this point, it is fair to say that AWS' IMDSv2 offering is equal in security to the offering provided by GCP and Azure, but I hope to see _IMDSv3_ in the future to improve AWS security further.
