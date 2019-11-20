@@ -76,6 +76,8 @@ Reverse proxies and firewalls alike are meant to forward all requests, `PUT`, `G
 
 The same misconfigurations of your reverse proxies and WAFs will result in the same compromise with _IMDSv2_ as _IMDSv1_.
 
+AWS says that the IMDSv2 metadata service will not respond to requests that include an `X-Forwarded-For` header. This is good defense in depth, but relying on this is a fundamentally flawed design because AWS still relies on the victim's behavior to prevent this issue. Misconfigured WAFs and Reverse Proxies can still be misconfigured to not include an `X-Forwarded-For` if they are acting as a transparent proxy.
+
 ## Opt in, i.e. Not Amazon's Problem
 Amazon cannot break compatibility with version 1 of the metadata service. They have provided a new feature for their security conscious customers. Enforcing that all requests to the metadata service _must_ use session-based requests is manual for customers.
 
@@ -99,4 +101,4 @@ GCP and Azure have different protections that require attackers to have control 
 
 AWS has improved their offering, but it might not be as comprehensive as their blog post is advertising, and it comes with quite a lot of complexity.
 
-At this point, it is fair to say that AWS' IMDSv2 offering is equal in security to the offering provided by GCP and Azure, but I hope to see _IMDSv3_ in the future to improve AWS security further.
+At this point, it is fair to say that AWS' IMDSv2 offering is equal in security to the offering provided by GCP and Azure, but I hope to see _IMDSv3_ in the future to improve AWS security further. This offering may provide defense in depth, but it is not a full solution to the problem, and adopting this at any reasonable scale is next to impossible.
