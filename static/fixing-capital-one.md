@@ -88,6 +88,15 @@ Amazon has improved the metadata service but the technical merits of the change 
 
 Two specific ideas come to mind that are stronger protection from SSRF attacks. First is a filesystem based approach where credentials can be read from the filesystem. Second is two-factor roles using the externalID, [borrowing from the confused deputy problem protection](https://aws.amazon.com/blogs/security/how-to-use-external-id-when-granting-access-to-your-aws-resources/) (which was outlined in my previous blog post).
 
-Both come to mind as stronger mitigations to this problem.
+Both would be stronger protections to this problem.
 
 This fix mostly allows AWS to respond to criticism in the wake of the Capital One breach, but it's questionable how much this really protects customers. Implementing this change in a large organization would still require a lot of work from customers, enforcing usage of the new service is opt in, and the protection achieved is not nearly comprehensive.
+
+# How does this compare with GCP and Azure?
+When comparing the protections of IMDSv2 in AWS with the metadata service protections in GCP and Azure, AWS's offering is unique. IMDSv2 protects against some attacks that GCP and Azure do not by requiring control of the HTTP method. 
+
+GCP and Azure have different protections that require attackers to have control over the HTTP headers forwarded to the metadata service.
+
+AWS has improved their offering, but it might not be as comprehensive as their blog post is advertising, and it comes with quite a lot of complexity.
+
+At this point, it is fair to say that AWS' IMDSv2 offering is equal in security to the offering provided by GCP and Azure, but I hope to se _IMDSv3_ in the future to improve AWS security further.
