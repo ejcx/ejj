@@ -42,7 +42,7 @@ Creating a session token requires the ability to make a `PUT` request. Many SSRF
 Notice, this request fails to return credentials. The metadata service returns a `405 Method Not Allowed` response when using the `GET` method to retrieve a session token with IMDSv2.
 
 ```
-ubuntu@ip-172-31-45-129:~$ curl -s "http://169.254.169.254/latest/api/token" \
+$ curl -s "http://169.254.169.254/latest/api/token" \
     -H "X-aws-ec2-metadata-token-ttl-seconds: 1" -v
 
 *   Trying 169.254.169.254...
