@@ -29,6 +29,8 @@ let head = `<!DOCTYPE html><html><head>
   }
 </style>
 </head><body>
+<script src="https://jam.dev/jam.js"></script>
+<script>Jam.init('weekly-silkworm-395')</script>
 <div class="categories"><a href="/">About</a> | <a href="/blog">Blog</a> | <a href="/contact">Contact</a> | <a href="/newsletter">Newsletter</a> </div>
 `
 
