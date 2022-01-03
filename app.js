@@ -35,6 +35,7 @@ app.get('/blog\/flying-software', serve('static/flying-software.md'));
 app.get('/blog\/capital-one', serve('static/capital-one.md'));
 app.get('/blog\/fixing-capital-one', serve('static/fixing-capital-one.md'));
 app.get('\/blog\/passgo-update', serve('static/passgo.md'));
+app.get('\/blog\/cloud-duct-tape', serve('static/cloud-duct-tape.md'));
 
 // Note that blog is optional. These are hyperlinked to a long time ago, and
 // blog was historically not prefixed on the path. Going forward don't forget
