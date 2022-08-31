@@ -29,7 +29,34 @@ function serve_raw(f) {
   }
 }
 
+async function random_fit(request) {
+  let shirts = Math.floor(Math.random() * 8)+1
+  let shorts = Math.floor(Math.random() * 4)+1
+  return new Response(render(`<img src='/fit/shirt${shirts}.jpg'/><img src='/fit/short${shorts}.jpg'/>`), {
+    headers: {
+      'Content-Type':'text/html'
+    }
+  })
+}
+
+async function serve_fit(request) {
+  let garmet = await fits.get(request.params.fitid)
+  if (garmet === null) {
+    return new Response("401", { status: 401})
+  }
+  const headers = new Headers()
+  garmet.writeHttpMetadata(headers)
+  headers.set('etag', garmet.httpEtag)
+  const status = garmet.body ? 200 : 304
+  return new Response(garmet.body, {
+    headers,
+    status
+  })
+}
+
 // New blog posts. Stricter Routing.
+app.get("^\/randomfit$", random_fit);
+app.get("^\/fit\/(?<fitid>(short|shirt)[0-9]+.jpg)$", serve_fit);
 app.get('/blog\/cloudflare-all-the-way-down', serve('static/cloudflare-all-the-way-down.md'));
 app.get('/blog\/flying-software', serve('static/flying-software.md'));
 app.get('/blog\/capital-one', serve('static/capital-one.md'));
